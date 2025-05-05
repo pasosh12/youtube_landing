@@ -28,7 +28,8 @@
             <button class="videoCam_btn"><img src="assets/header/videoCam.svg" alt="upload video" /></button>
             <button class="apps_btn"><img src="assets/header/apps.svg" alt="apps" /></button>
             <button class="notification_btn"><img src="assets/header/notification.svg" alt="notifications" /></button>
-            <a href="#" class="avatar-link"><img class="header__avatar" src="assets/header/user-logo.png" alt="avatar" /></a>
+            <a href="#" class="avatar-link"><img class="header__avatar" src="assets/header/user-logo.png"
+                    alt="avatar" /></a>
             <button class="header__more-btn"><img src="assets/header/more_vert.svg" alt="more" /></button>
         </div>
     </header>
@@ -101,7 +102,11 @@
                 <div class="main_content_row">
                     <div class="feed">
                         <div class="video-card">
-                            <img class="video-thumb" src="assets/main/main_videos/main_video.svg" alt="Видео превью">
+                            <div class="main-video-thumb">
+                                <img class="main-video-thumb-img" src="assets/main/main_videos/main_video.svg"
+                                    alt="Video preview">
+                                <span class="main-video-duration">4:33</span>
+                            </div>
                             <div class="video-info">
                                 <h2>Choosing The Best Audio Player Software For Your Computer</h2>
                                 <p class="video-desc">
@@ -138,79 +143,110 @@
                     </div>
                 </div>
                 <div class="footer-videos-row" id="footer-videos-row">
-    
+
                     <div class='footer-video-card'>
-                        <img src='assets/main/main_videos/Cover.svg' alt="Astronomy or Astrology" />
+                        <div class="video-thumb">
+
+                            <img src='assets/main/main_videos/Cover.svg' alt="Astronomy or Astrology" />
+                            <span class="video-duration">3:03</span>
+                        </div>
                         <p>Astronomy or Astrology</p>
-                        <div style="display: flex; flex-direction: row; ">
+                        <div>
                             <span>11k views</span>
                             <span>6 months ago</span>
                             <span>Food & Drink</span>
                         </div>
                     </div>
-    
+
                     <div class="footer-video-card">
-                        <img src='assets/main/main_videos/Cover-1.svg' alt="Astronomy or Astrology" />
+                        <div class="video-thumb">
+                            <span class="video-duration">4:33</span>
+                            <img src='assets/main/main_videos/Cover-1.svg' alt="Astronomy or Astrology" />
+                        </div>
                         <p>Astronomy or Astrology</p>
-                        <div style="display: flex; flex-direction: row; ">
+                        <div  >
                             <span>11k views</span>
                             <span>6 months ago</span>
                             <span>Food & Drink</span>
                         </div>
                     </div>
-    
+
                     <div class="footer-video-card">
-                        <img src='assets/main/main_videos/Cover-2.svg' alt="Astronomy or Astrology" />
+                        <div class="video-thumb">
+                            <span class="video-duration">4:33</span>
+                            <img src='assets/main/main_videos/Cover-2.svg' alt="Astronomy or Astrology" />
+                        </div>
+
                         <p>Astronomy or Astrology</p>
-                        <div style="display: flex; flex-direction: row; ">
+                        <div  >
                             <span>11k views</span>
                             <span>6 months ago</span>
                             <span>Food & Drink</span>
                         </div>
                     </div>
-    
+
                     <div class="footer-video-card">
-                        <img src='assets/main/main_videos/Cover-3.svg' alt="Astronomy or Astrology" />
+                        <div class="video-thumb">
+                            <span class="video-duration">4:33</span>
+                            <img src='assets/main/main_videos/Cover-3.svg' alt="Astronomy or Astrology" />
+                        </div>
+
                         <p>Astronomy or Astrology</p>
-                        <div style="display: flex; flex-direction: row; ">
+                        <div>
                             <span>11k views</span>
                             <span>6 months ago</span>
                             <span>Food & Drink</span>
                         </div>
                     </div>
-    
+
                     <div class="footer-video-card">
-                        <img src='assets/main/main_videos/Cover6.svg' alt="Astronomy or Astrology" />
+                        <div class="video-thumb">
+
+                            <span class="video-duration">4:33</span>
+                            <img src='assets/main/main_videos/Cover6.svg' alt="Astronomy or Astrology" />
+                        </div>
+
                         <p>Astronomy or Astrology</p>
-                        <div style="display: flex; flex-direction: row; ">
+                        <div >
                             <span>11k views</span>
                             <span>6 months ago</span>
                             <span>Food & Drink</span>
                         </div>
                     </div>
-    
+
                     <div class="footer-video-card">
-                        <img src='assets/main/main_videos/Cover5.svg' alt="Astronomy or Astrology" />
+                        <div class="video-thumb">
+                            <span class="video-duration">4:33</span>
+                            <img src='assets/main/main_videos/Cover5.svg' alt="Astronomy or Astrology" />
+                        </div>
+
                         <p>Astronomy or Astrology</p>
-                        <div style="display: flex; flex-direction: row; ">
+                        <div >
                             <span>11k views</span>
                             <span>6 months ago</span>
                             <span>Food & Drink</span>
                         </div>
                     </div>
-    
                 </div>
             </footer>
         </div>
-        
+
         </div>
     </main>
     <nav class="bottom-nav">
-        <a href="#" class="bottom-nav__item"><img src="assets/side_menu/home2.svg" alt="Home"/><div>Home</div></a>
-        <a href="#" class="bottom-nav__item"><img src="assets/side_menu/trends_btn.svg" alt="Trending"/><div>Trending</div></a>
-        <a href="#" class="bottom-nav__item"><img src="assets/side_menu/subscriptions.svg" alt="Subscriptions"/><div>Subscriptions</div></a>
-        <a href="#" class="bottom-nav__item"><img src="assets/side_menu/library.svg" alt="Library"/><div>Library</div></a>
-      </nav>
+        <a href="#" class="bottom-nav__item"><img src="assets/side_menu/home2.svg" alt="Home" />
+            <div>Home</div>
+        </a>
+        <a href="#" class="bottom-nav__item"><img src="assets/side_menu/trends_btn.svg" alt="Trending" />
+            <div>Trending</div>
+        </a>
+        <a href="#" class="bottom-nav__item"><img src="assets/side_menu/subscriptions.svg" alt="Subscriptions" />
+            <div>Subscriptions</div>
+        </a>
+        <a href="#" class="bottom-nav__item"><img src="assets/side_menu/library.svg" alt="Library" />
+            <div>Library</div>
+        </a>
+    </nav>
     <script src="index.js"></script>
 </body>
 
