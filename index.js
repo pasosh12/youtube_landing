@@ -22,10 +22,17 @@ function toggleMenu() {
         main.classList.remove('main-full');
     }
 }
-// По умолчанию открыт
+ 
 window.onload = function() {
     const sidebar = document.getElementById('sidebar');
     const main = document.querySelector('main');
     sidebar.classList.add('sidebar-open');
     main.classList.remove('main-full');
 };
+
+document.getElementById('footer-scroll-left').onclick = function() {
+    document.getElementById('footer-videos-row').scrollBy({left: -300, behavior: 'smooth'});
+  };
+  document.getElementById('footer-scroll-right').onclick = function() {
+    document.getElementById('footer-videos-row').scrollBy({left: 300, behavior: 'smooth'});
+  };

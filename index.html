@@ -10,13 +10,26 @@
 <body>
     <header class="header">
         <div class="header__left">
-            <button class="burger-menu" onclick="toggleMenu()">☰</button>
+            <button class="burger_menu" onclick="toggleMenu()">
+                <img src="assets/header/burger_menu.svg" alt="burger menu" />
+            </button>
 
             <div class="header__logo">
                 <img src="assets/header/youtube_logo.svg" alt="logo" />
             </div>
         </div>
-        <input placeholder="Search"></input>
+        <div class="header__center">
+
+            <input class="header__search-input" placeholder="Search" />
+            <button class="header__search-btn"><img src="assets/header/search.svg" alt="search" /></button>
+        </div>
+        <div class="header__right">
+            <button class="videoCam_btn"><img src="assets/header/videoCam.svg" alt="upload video" /></button>
+            <button class="apps_btn"><img src="assets/header/apps.svg" alt="apps" /></button>
+            <button class="notification_btn"><img src="assets/header/notification.svg" alt="notifications" /></button>
+            <a href="#" class="avatar-link"><img class="header__avatar" src="assets/header/user-logo.png" alt="avatar" /></a>
+            <button class="header__more-btn"><img src="assets/header/more_vert.svg" alt="more" /></button>
+        </div>
     </header>
     <aside class="sidebar sidebar-open" id="sidebar">
         <nav>
@@ -35,16 +48,16 @@
             </ul>
         </nav>
 
-        <div class = 'subscriptions'>
+        <div class='subscriptions'>
             <h3 class="subscriptions__title">Subscriptions</h2>
-            <ul>
-                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval.svg" />Gussie Singleton</a></li>
-                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-1.svg" />Nara Francis</a></li>
-                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-2.svg" />Belle Briggs</a></li>
-                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-3.svg" />Eunice Cortez</a></li>
-                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-4.svg" />Emma Hanson</a></li>
-                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-5.svg" />Leah Berry</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#"><img src="assets/side_menu/subscriptions/Oval.svg" />Gussie Singleton</a></li>
+                    <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-1.svg" />Nara Francis</a></li>
+                    <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-2.svg" />Belle Briggs</a></li>
+                    <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-3.svg" />Eunice Cortez</a></li>
+                    <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-4.svg" />Emma Hanson</a></li>
+                    <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-5.svg" />Leah Berry</a></li>
+                </ul>
         </div>
         <div class="settings">
             <ul>
@@ -52,37 +65,151 @@
             </ul>
         </div>
     </aside>
-
-
     <main>
         <div class="container">
-            <img class="main_cover_img" src="assets/main/Cover.svg" alt="cover">
+            <img class="main_cover_img" src="assets/main/Cover.svg" alt="cover" />
             <section>
-                <header>
-                    <div class="main_user">
-                        
-                        <img src="assets/main/Main_user.svg" alt="user" /> 
-                    <div class="user_info">
-                        
-                        <p>Margaret Phelps</p>
-                        <span>245k subscribers</span>
+                <header class="main_user">
+                    <div class="user_container">
+                        <img src="assets/main/Main_user.svg" alt="user" />
+                        <div class="user_info">
+
+                            <p>Margaret Phelps</p>
+                            <span>245k subscribers</span>
+                        </div>
+                    </div>
+
+                    <div class="main_user_btn">
+                        <button id="notification_btn"><img src="assets/header/notification.svg"
+                                alt="notification"></button>
+                        <button id="subscribe_btn">Subscribe 2.3m</button>
+                    </div>
+                </header>
+                <nav>
+
+                    <ul class="main_menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Playlists</a></li>
+                        <li><a href="#">Channels</a></li>
+                        <li><a href="#">Discussion</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </nav>
+                <div class="main_content_row">
+                    <div class="feed">
+                        <div class="video-card">
+                            <img class="video-thumb" src="assets/main/main_videos/main_video.svg" alt="Видео превью">
+                            <div class="video-info">
+                                <h2>Choosing The Best Audio Player Software For Your Computer</h2>
+                                <p class="video-desc">
+                                    Your cheap internet-based banner advertising will become one of the sought for ads
+                                    there are. Today, the world of Internet advertising is rapidly evolving beyond
+                                    banner ads and intrusive pop-ups. Bayles A common medium for advertising on the
+                                    Internet is the use of banner ads.
+                                </p>
+                                <div class="video-meta">
+                                    <span>11k views</span>
+                                    <span>·</span>
+                                    <span>6 months ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="recommendations">
+                        <span class="video-meta">Recommended channels</span>
+                        <ul>
+                            <li><img src="assets/main/recommended_user/Oval.svg" />Flora Benson</li>
+                            <li><img src="assets/main/recommended_user/Oval-1.svg" />Violet Cobb</li>
+                            <li><img src="assets/main/recommended_user/Oval-2.svg" />Philipp Mullins</li>
+                        </ul>
+                    </aside>
+                </div>
+
+            </section>
+            <footer>
+                <div class="footer-title-row">
+                    <h3 class="footer-title">Margaret Phelps videos</h3>
+                    <div class="footer-scroll-buttons">
+                        <button class="footer-scroll-btn" id="footer-scroll-left">&#8592;</button>
+                        <button class="footer-scroll-btn" id="footer-scroll-right">&#8594;</button>
                     </div>
                 </div>
-                
-                <nav class="main_menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Playlists</a></li>
-                    <li><a href="#">Channels</a></li>
-                    <li><a href="#">Discussion</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Search</a></li>
-                </nav>
-            </header>
-            <article></article>
-        </section>
-    </div>
+                <div class="footer-videos-row" id="footer-videos-row">
+    
+                    <div class='footer-video-card'>
+                        <img src='/assets/main/main_videos/Cover.svg' alt="Astronomy or Astrology" />
+                        <p>Astronomy or Astrology</p>
+                        <div style="display: flex; flex-direction: row; ">
+                            <span>11k views</span>
+                            <span>6 months ago</span>
+                            <span>Food & Drink</span>
+                        </div>
+                    </div>
+    
+                    <div class="footer-video-card">
+                        <img src='/assets/main/main_videos/Cover-1.svg' alt="Astronomy or Astrology" />
+                        <p>Astronomy or Astrology</p>
+                        <div style="display: flex; flex-direction: row; ">
+                            <span>11k views</span>
+                            <span>6 months ago</span>
+                            <span>Food & Drink</span>
+                        </div>
+                    </div>
+    
+                    <div class="footer-video-card">
+                        <img src='/assets/main/main_videos/Cover-2.svg' alt="Astronomy or Astrology" />
+                        <p>Astronomy or Astrology</p>
+                        <div style="display: flex; flex-direction: row; ">
+                            <span>11k views</span>
+                            <span>6 months ago</span>
+                            <span>Food & Drink</span>
+                        </div>
+                    </div>
+    
+                    <div class="footer-video-card">
+                        <img src='/assets/main/main_videos/Cover-3.svg' alt="Astronomy or Astrology" />
+                        <p>Astronomy or Astrology</p>
+                        <div style="display: flex; flex-direction: row; ">
+                            <span>11k views</span>
+                            <span>6 months ago</span>
+                            <span>Food & Drink</span>
+                        </div>
+                    </div>
+    
+                    <div class="footer-video-card">
+                        <img src='/assets/main/main_videos/Cover6.svg' alt="Astronomy or Astrology" />
+                        <p>Astronomy or Astrology</p>
+                        <div style="display: flex; flex-direction: row; ">
+                            <span>11k views</span>
+                            <span>6 months ago</span>
+                            <span>Food & Drink</span>
+                        </div>
+                    </div>
+    
+                    <div class="footer-video-card">
+                        <img src='/assets/main/main_videos/Cover5.svg' alt="Astronomy or Astrology" />
+                        <p>Astronomy or Astrology</p>
+                        <div style="display: flex; flex-direction: row; ">
+                            <span>11k views</span>
+                            <span>6 months ago</span>
+                            <span>Food & Drink</span>
+                        </div>
+                    </div>
+    
+                </div>
+            </footer>
+        </div>
+        
+        </div>
     </main>
+    <!-- <nav class="bottom-nav">
+        <div class="bottom-nav__item"><img src="assets/bottom-nav/home.svg" alt="Home"/><div>Home</div></div>
+        <div class="bottom-nav__item"><img src="assets/bottom-nav/trending.svg" alt="Trending"/><div>Trending</div></div>
+        <div class="bottom-nav__item"><img src="assets/bottom-nav/subs.svg" alt="Subscriptions"/><div>Subscriptions</div></div>
+        <div class="bottom-nav__item"><img src="assets/bottom-nav/library.svg" alt="Library"/><div>Library</div></div>
+      </nav> -->
     <script src="index.js"></script>
 </body>
 
