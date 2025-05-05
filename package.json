@@ -1,0 +1,17 @@
+{
+  "homepage": "https://pasosh12.github.io/youtube_landing",
+  "name": "youtube2_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"No build step\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
