@@ -1,9 +1,11 @@
 {
+  "homepage": "https://pasosh12.github.io/youtube_landing",
   "name": "youtube2_js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true
