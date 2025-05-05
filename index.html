@@ -1,10 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-$END$
+    <header class="header">
+        <div class="header__left">
+            <button class="burger-menu" onclick="toggleMenu()">☰</button>
+
+            <div class="header__logo">
+                <img src="assets/header/youtube_logo.svg" alt="logo" />
+            </div>
+        </div>
+        <input placeholder="Search"></input>
+    </header>
+    <aside class="sidebar sidebar-open" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#"><img src="assets/side_menu/home2.svg" /> Home </a></li>
+                <li><a href="#"><img src="assets/side_menu/trends_btn.svg" /> Trending </a></li>
+                <li><a href="#"><img src="assets/side_menu/subscriptions.svg" /> Subscriptions </a></li>
+                <li><a href="#"><img src="assets/side_menu/library.svg" /> Library </a></li>
+                <li><a href="#"><img src="assets/side_menu/history.svg" /> History</a></li>
+                <li><a href="#"><img src="assets/side_menu/watchLater_btn.svg" /> Watch Later </a></li>
+                <li><a href="#"><img src="assets/side_menu/favorites_btn.svg" /> Favourites </a></li>
+                <li><a href="#"><img src="assets/side_menu/liked_btn.svg" /> Liked Videos </a></li>
+                <li><a href="#"><img src="assets/side_menu/music_btn.svg" /> Music </a></li>
+                <li><a href="#"><img src="assets/side_menu/games.svg" /> Games </a></li>
+                <li><a href="#"><img src="assets/side_menu/chevron-down.svg" />Show more </a></li>
+            </ul>
+        </nav>
+
+        <div class = 'subscriptions'>
+            <h3 class="subscriptions__title">Subscriptions</h2>
+            <ul>
+                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval.svg" />Gussie Singleton</a></li>
+                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-1.svg" />Nara Francis</a></li>
+                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-2.svg" />Belle Briggs</a></li>
+                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-3.svg" />Eunice Cortez</a></li>
+                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-4.svg" />Emma Hanson</a></li>
+                <li><a href="#"><img src="assets/side_menu/subscriptions/Oval-5.svg" />Leah Berry</a></li>
+            </ul>
+        </div>
+        <div class="settings">
+            <ul>
+                <li><a href="#"><img src="assets/side_menu/settings_btn.svg" />Settings</a></li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <main>
+        <div class="container">
+            <img class="main_cover_img" src="assets/main/Cover.svg" alt="cover">
+            <section>
+                <header>
+                    <div class="main_user">
+                        
+                        <img src="assets/main/Main_user.svg" alt="user" /> 
+                    <div class="user_info">
+                        
+                        <p>Margaret Phelps</p>
+                        <span>245k subscribers</span>
+                    </div>
+                </div>
+                
+                <nav class="main_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Playlists</a></li>
+                    <li><a href="#">Channels</a></li>
+                    <li><a href="#">Discussion</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Search</a></li>
+                </nav>
+            </header>
+            <article></article>
+        </section>
+    </div>
+    </main>
+    <script src="index.js"></script>
 </body>
+
 </html>
